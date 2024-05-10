@@ -1,0 +1,15 @@
+<p>Crea tareas</p>
+
+<span *ngIf="error">Debe completar el formulario</span>
+
+<form [formGroup]="taskForm" (submit)="createTask()">
+
+  <label for="todo">Descripción: </label>
+  <input id="todo" type="text" formControlName="todo">
+
+  <label for="completed">Completado?</label>
+  <input type="checkbox" id="completed" formControlName="completed" />
+
+  <button type='submit'>Crear</button>
+
+</form>
