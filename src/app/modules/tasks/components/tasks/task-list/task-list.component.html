@@ -1,8 +1,8 @@
 <span *ngIf="tasksList.length === 0">No hay elementos para mostrar</span>
 
-<section *ngIf="tasksList.length">
+<section *ngIf="tasksList.length" class='task-container'>
   <p>Listado de Tareas</p>
-  <div *ngFor='let task of tasksList'>
+  <div *ngFor='let task of tasksList' class='task'>
     <p>{{ task.todo }}</p>
     <p>{{ task.completed ? '✅' : '⚠️' }}</p>
   </div>

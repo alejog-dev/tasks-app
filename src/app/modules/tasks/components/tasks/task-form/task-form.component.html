@@ -4,11 +4,15 @@
 
 <form [formGroup]="taskForm" (submit)="createTask()">
 
-  <label for="todo">Descripción: </label>
-  <input id="todo" type="text" formControlName="todo">
+  <div>
+    <label for="todo">Descripción: </label>
+    <input id="todo" type="text" formControlName="todo">
+  </div>
 
-  <label for="completed">Completado?</label>
-  <input type="checkbox" id="completed" formControlName="completed" />
+  <div>
+    <label for="completed">Completado?</label>
+    <input type="checkbox" id="completed" formControlName="completed" />
+  </div>
 
   <button type='submit'>Crear</button>
 

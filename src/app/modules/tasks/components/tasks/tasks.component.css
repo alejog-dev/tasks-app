@@ -1,0 +1,13 @@
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+a:hover {
+  background-color: rgb(218, 235, 250);
+}
